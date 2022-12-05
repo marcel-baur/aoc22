@@ -41,7 +41,6 @@ int main(int argc, char * argv[]) {
     std::vector<char> to_move;
     for (int i = 0; i < crates; i++) {
             to_move.push_back(stacks[from].top());
-            std::cout << stacks[from].top() << '\n';
             stacks[from].pop();
     }
     for (int i = to_move.size() - 1; i >= 0; i--) {
